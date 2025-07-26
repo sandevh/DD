@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-maroon-primary: #780c28;
+  --color-maroon-secondary: #a21339;
+  --color-white-primary: #fffaf4;
+}
