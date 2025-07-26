@@ -8,7 +8,7 @@
     "client": "Monkey Tea",
     "Project": "Full Branding",
     "Website": "http://www.monkeytea.com/",
-    "mainImage": "src/assets/project-images/monkey-tea/MonkeyTea.png"
+    "mainImage": "/project-images/monkey-tea/MonkeyTea.png"
   },
   {
     "title": "CHA TEA",
@@ -19,7 +19,7 @@
     "client": "Cha tea.inc",
     "Project": "Full Branding",
     "Website": "http://www.chateachina.com/",
-    "mainImage": "src/assets/project-images/cha-tea/ChaTea.png"
+    "mainImage": "/project-images/cha-tea/ChaTea.png"
   },
   {
     "title": "SKEEM",
@@ -30,7 +30,7 @@
     "client": "Sekem Global",
     "Project": "Full Branding",
     "Website": "http://www.sekemglobal.com/",
-    "mainImage": "src/assets/project-images/skeem/skeem.png"
+    "mainImage": "/project-images/skeem/skeem.png"
   },
   {
     "title": "HELA",
@@ -41,7 +41,7 @@
     "client": "Hela.Lanka",
     "Project": "Full Branding",
     "Website": "http://www.helalanka.lk/",
-    "mainImage": "src/assets/project-images/hela/Hela.png"
+    "mainImage": "/project-images/hela/Hela.png"
   },
   {
     "title": "CARROT CHAMP",
@@ -52,7 +52,7 @@
     "client": "Hela.Lanka",
     "Project": "Full Branding",
     "Website": "http://www.helalanka.lk/",
-    "mainImage": "src/assets/project-images/carrot-champ/CarrotChamp.png"
+    "mainImage": "/project-images/carrot-champ/CarrotChamp.png"
   },
   {
     "title": "WILD SIP",
@@ -63,7 +63,7 @@
     "client": "Wild Sip",
     "Project": "Full Branding",
     "Website": "http://www.wildslip.com/",
-    "mainImage": "src/assets/project-images/wild-sip/WildSip.png"
+    "mainImage": "/project-images/wild-sip/WildSip.png"
   },
   {
     "title": "CHILI SPLASH",
@@ -74,7 +74,7 @@
     "client": "Chili Splash.inc",
     "Project": "Full Branding",
     "Website": "http://www.chilisplash.com/",
-    "mainImage": "src/assets/project-images/chili-splash/ChiliSplash.png"
+    "mainImage": "/project-images/chili-splash/ChiliSplash.png"
   },
   {
     "title": "SHEHAN PERIS PHOTOGRAPHY",
@@ -85,6 +85,6 @@
     "client": "Shehan Peiris",
     "Project": "Full Branding",
     "Website": "http://www.spphotography.com/",
-    "mainImage": "src/assets/project-images/shehan-peiris-photography/ShehanPeirisPhotography.png"
+    "mainImage": "/project-images/shehan-peiris-photography/ShehanPeirisPhotography.png"
   }
 ]
