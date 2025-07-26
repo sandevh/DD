@@ -18,7 +18,7 @@ const Project = () => {
   return (
     <div className="font-montserrat bg-white-primary text-black min-h-screen px-4 sm:px-6 lg:px-8 py-12">
       <img
-        src={"/" + project.mainImage}
+        src={project.mainImage}
         alt={project.title}
         className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-b-3xl shadow-md"
       />

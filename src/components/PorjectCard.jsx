@@ -40,7 +40,7 @@ const ProjectCard = ({ project, index }) => {
               `/projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`
             )
           }
-          className="mt-auto inline-block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm bg-maroon-primary text-white rounded-full hover:bg-maroon-secondary transition"
+          className="mt-auto inline-block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm bg-maroon-primary text-white rounded-full hover:bg-maroon-secondary hover:cursor-pointer transition"
         >
           View Project
         </button>
