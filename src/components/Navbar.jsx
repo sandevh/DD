@@ -7,7 +7,7 @@ export default function Navbar() {
   const links = [
     { to: "/", label: "Home" },
     { to: "/projects", label: "Projects" },
-    { to: "/team", label: "Team" },
+    { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -20,7 +20,6 @@ export default function Navbar() {
         DoubleDrift
       </Link>
 
-      {/* Hamburger button for mobile */}
       <button
         className="sm:hidden relative z-20 text-maroon-primary"
         onClick={() => setOpen(!open)}
@@ -51,7 +50,6 @@ export default function Navbar() {
         </svg>
       </button>
 
-      {/* Desktop links */}
       <div className="hidden sm:flex relative z-10 space-x-8">
         {links.map(({ to, label }) => (
           <Link
@@ -65,7 +63,6 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg sm:hidden z-10">
           {links.map(({ to, label }) => (

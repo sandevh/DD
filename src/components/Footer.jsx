@@ -32,7 +32,7 @@ const Footer = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/projects", label: "Projects" },
-              { to: "/team", label: "Team" },
+              { to: "/about", label: "About" },
               { to: "/contact", label: "Contact" },
             ].map((item) => (
               <motion.li

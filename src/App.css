@@ -2,6 +2,20 @@
 
 @theme {
   --color-maroon-primary: #780c28;
-  --color-maroon-secondary: #a21339;
-  --color-white-primary: #fffaf4;
+  --color-maroon-secondary: #361215;
+  --color-white-primary: #ffffff;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
 }

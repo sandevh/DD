@@ -8,7 +8,16 @@
     "client": "Monkey Tea",
     "Project": "Full Branding",
     "Website": "http://www.monkeytea.com/",
-    "mainImage": "/project-images/monkey-tea/MonkeyTea.png"
+    "mainImage": "/project-images/monkey-tea/MonkeyTea.png",
+    "gallery": [
+      "/project-images/monkey-tea/MonkeyTea1.png",
+      "/project-images/monkey-tea/MonkeyTea2.png",
+      "/project-images/monkey-tea/MonkeyTea3.png",
+      "/project-images/monkey-tea/MonkeyTea4.png",
+      "/project-images/monkey-tea/MonkeyTea5.png",
+      "/project-images/monkey-tea/MonkeyTea6.png",
+      "/project-images/monkey-tea/MonkeyTea7.png"
+    ]
   },
   {
     "title": "CHA TEA",
@@ -19,7 +28,16 @@
     "client": "Cha tea.inc",
     "Project": "Full Branding",
     "Website": "http://www.chateachina.com/",
-    "mainImage": "/project-images/cha-tea/ChaTea.png"
+    "mainImage": "/project-images/cha-tea/ChaTea.png",
+    "gallery": [
+      "/project-images/cha-tea/ChaTea1.png",
+      "/project-images/cha-tea/ChaTea2.png",
+      "/project-images/cha-tea/ChaTea3.png",
+      "/project-images/cha-tea/ChaTea4.png",
+      "/project-images/cha-tea/ChaTea5.png",
+      "/project-images/cha-tea/ChaTea6.png",
+      "/project-images/cha-tea/ChaTea7.png"
+    ]
   },
   {
     "title": "SKEEM",
@@ -30,7 +48,20 @@
     "client": "Sekem Global",
     "Project": "Full Branding",
     "Website": "http://www.sekemglobal.com/",
-    "mainImage": "/project-images/skeem/skeem.png"
+    "mainImage": "/project-images/skeem/skeem.png",
+    "gallery": [
+      "/project-images/skeem/skeem1.png",
+      "/project-images/skeem/skeem2.png",
+      "/project-images/skeem/skeem3.png",
+      "/project-images/skeem/skeem4.png",
+      "/project-images/skeem/skeem5.png",
+      "/project-images/skeem/skeem6.png",
+      "/project-images/skeem/skeem7.png",
+      "/project-images/skeem/skeem8.png",
+      "/project-images/skeem/skeem9.png",
+      "/project-images/skeem/skeem10.png",
+      "/project-images/skeem/skeem11.png"
+    ]
   },
   {
     "title": "HELA",
@@ -41,7 +72,15 @@
     "client": "Hela.Lanka",
     "Project": "Full Branding",
     "Website": "http://www.helalanka.lk/",
-    "mainImage": "/project-images/hela/Hela.png"
+    "mainImage": "/project-images/hela/Hela.png",
+    "gallery": [
+      "/project-images/hela/hela1.png",
+      "/project-images/hela/hela2.png",
+      "/project-images/hela/hela3.png",
+      "/project-images/hela/hela4.png",
+      "/project-images/hela/hela5.png",
+      "/project-images/hela/hela6.png"
+    ]
   },
   {
     "title": "CARROT CHAMP",
@@ -52,7 +91,19 @@
     "client": "Hela.Lanka",
     "Project": "Full Branding",
     "Website": "http://www.helalanka.lk/",
-    "mainImage": "/project-images/carrot-champ/CarrotChamp.png"
+    "mainImage": "/project-images/carrot-champ/CarrotChamp.png",
+    "gallery": [
+      "/project-images/carrot-champ/CarrotChamp1.png",
+      "/project-images/carrot-champ/CarrotChamp2.png",
+      "/project-images/carrot-champ/CarrotChamp3.png",
+      "/project-images/carrot-champ/CarrotChamp4.png",
+      "/project-images/carrot-champ/CarrotChamp5.png",
+      "/project-images/carrot-champ/CarrotChamp6.png",
+      "/project-images/carrot-champ/CarrotChamp7.png",
+      "/project-images/carrot-champ/CarrotChamp8.png",
+      "/project-images/carrot-champ/CarrotChamp9.png",
+      "/project-images/carrot-champ/CarrotChamp10.png"
+    ]
   },
   {
     "title": "WILD SIP",
@@ -63,7 +114,20 @@
     "client": "Wild Sip",
     "Project": "Full Branding",
     "Website": "http://www.wildslip.com/",
-    "mainImage": "/project-images/wild-sip/WildSip.png"
+    "mainImage": "/project-images/wild-sip/WildSip.png",
+    "gallery": [
+      "/project-images/wild-sip/WildSip1.png",
+      "/project-images/wild-sip/WildSip2.png",
+      "/project-images/wild-sip/WildSip3.png",
+      "/project-images/wild-sip/WildSip4.png",
+      "/project-images/wild-sip/WildSip5.png",
+      "/project-images/wild-sip/WildSip6.png",
+      "/project-images/wild-sip/WildSip7.png",
+      "/project-images/wild-sip/WildSip8.png",
+      "/project-images/wild-sip/WildSip9.png",
+      "/project-images/wild-sip/WildSip10.png",
+      "/project-images/wild-sip/WildSip11.png"
+    ]
   },
   {
     "title": "CHILI SPLASH",
@@ -74,7 +138,12 @@
     "client": "Chili Splash.inc",
     "Project": "Full Branding",
     "Website": "http://www.chilisplash.com/",
-    "mainImage": "/project-images/chili-splash/ChiliSplash.png"
+    "mainImage": "/project-images/chili-splash/ChiliSplash.png",
+    "gallery": [
+      "/project-images/chili-splash/ChiliSplash1.png",
+      "/project-images/chili-splash/ChiliSplash2.png",
+      "/project-images/chili-splash/ChiliSplash3.png"
+    ]
   },
   {
     "title": "SHEHAN PERIS PHOTOGRAPHY",
@@ -85,6 +154,18 @@
     "client": "Shehan Peiris",
     "Project": "Full Branding",
     "Website": "http://www.spphotography.com/",
-    "mainImage": "/project-images/shehan-peiris-photography/ShehanPeirisPhotography.png"
+    "mainImage": "/project-images/shehan-peiris-photography/ShehanPeirisPhotography.png",
+    "gallery": [
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography1.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography2.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography3.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography4.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography5.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography6.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography7.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography8.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography9.png",
+      "/project-images/shehan-peiris-photography/ShehanPeirisPhotography10.png"
+    ]
   }
 ]

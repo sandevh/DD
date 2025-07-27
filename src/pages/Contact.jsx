@@ -22,7 +22,6 @@ const Contact = () => {
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Heading */}
         <motion.div
           className="text-center mb-14"
           initial={{ opacity: 0, y: 40 }}
@@ -37,9 +36,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        {/* Contact + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-          {/* Contact Info */}
           <motion.div
             className="bg-white/5 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-white/10 shadow-lg"
             initial={{ opacity: 0, x: -60 }}
@@ -64,7 +61,6 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Social Icons */}
             <div className="mt-10">
               <h3 className="text-lg font-bold mb-4">Follow Us</h3>
               <div className="flex flex-wrap gap-4">
@@ -101,7 +97,6 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.form
             className="bg-white/5 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-white/10 shadow-lg space-y-6"
             initial={{ opacity: 0, x: 60 }}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Team = () => {
+const About = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-maroon-primary to-maroon-secondary text-white font-montserrat pt-24 sm:pt-32 pb-16 px-4 sm:px-6 md:px-10 relative overflow-hidden">
       <motion.div
@@ -10,12 +10,8 @@ const Team = () => {
         className="max-w-5xl mx-auto text-left space-y-8"
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold drop-shadow-lg mb-4">
-          TEAM
+          About Us
         </h1>
-
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white drop-shadow-sm">
-          Meet the Team Behind the Creativity
-        </h2>
 
         <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
           At <span className="font-bold text-white">The Double Drift</span>,
@@ -46,4 +42,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default About;

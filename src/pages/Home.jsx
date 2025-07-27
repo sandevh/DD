@@ -1,49 +1,17 @@
-import { useState, useEffect } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import video from "../assets/dd.avif";
-
-const FadeInUp = ({ children, delay = 0, className = "" }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), delay * 100);
-    return () => clearTimeout(timer);
-  }, [delay]);
-
-  return (
-    <div
-      className={`transform transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      } ${className}`}
-    >
-      {children}
-    </div>
-  );
-};
-
-const ServiceCard = ({ title, description, services, delay }) => (
-  <FadeInUp
-    delay={delay}
-    className="bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-[1.02]"
-  >
-    <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">{title}</h3>
-    <p className="text-white/80 mb-6 leading-relaxed text-sm sm:text-base">
-      {description}
-    </p>
-    <div className="flex flex-wrap gap-2">
-      {services.map((service, index) => (
-        <span
-          key={index}
-          className="px-3 py-1 bg-white/10 text-white/90 rounded-full text-xs sm:text-sm font-medium"
-        >
-          {service}
-        </span>
-      ))}
-    </div>
-  </FadeInUp>
-);
+import ServiceCard from "../components/ServiceCard";
 
 export default function Home() {
+  const heroRef = useRef(null);
+  const introRef = useRef(null);
+  const servicesRef = useRef(null);
+
+  const scrollTo = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const services = [
     {
       title: "Branding & Identity Design",
@@ -86,14 +54,16 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-maroon-primary to-maroon-secondary text-white font-montserrat">
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 text-center py-24 sm:py-32 space-y-16 sm:space-y-20 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-maroon-primary to-maroon-secondary text-white font-montserrat scroll-smooth">
+      <section
+        ref={heroRef}
+        className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-10 text-center py-24 sm:py-32 space-y-12 relative overflow-hidden"
+      >
         <motion.div
-          className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl"
+          className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl backdrop-blur-md bg-white/10 border border-white/20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.4 }}
-          custom={0}
         >
           <video
             src={video}
@@ -105,42 +75,73 @@ export default function Home() {
           />
         </motion.div>
 
-        <FadeInUp delay={2}>
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold drop-shadow-md leading-tight max-w-4xl mx-auto px-2 sm:px-0">
-            "Experience designs that capture your heart and stimulate your
-            mind."
-          </h1>
-        </FadeInUp>
-
-        <FadeInUp delay={4}>
-          <div className="text-lg sm:text-xl text-[#e7dfd5] space-y-5 sm:space-y-6 leading-relaxed font-bold max-w-4xl w-full text-left mx-auto px-2 sm:px-0">
-            <p>
-              Welcome! to the new era of design. You are about to experience a
-              revolution in the way we think about design, where innovation and
-              creativity reign supreme.
-            </p>
-            <p>
-              This era marks a turning point where boundaries are pushed, and
-              the impossible becomes possible.
-            </p>
-            <p>
-              Get ready to witness the most exciting and groundbreaking designs
-              that will shape the future and inspire generations to come.
-            </p>
-          </div>
-        </FadeInUp>
+        <button
+          onClick={() => scrollTo(introRef)}
+          className="mt-4 text-sm font-semibold px-5 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full hover:bg-white/30 transition hover:cursor-pointer"
+        >
+          Explore More ↓
+        </button>
       </section>
 
-      <section className="px-4 sm:px-6 md:px-10 py-12 sm:py-16 bg-white/5 border-t border-white/10">
-        <FadeInUp delay={0} className="text-center mb-12 sm:mb-16">
+      <section
+        ref={introRef}
+        className="min-h-[80vh] flex flex-col justify-center px-4 sm:px-6 md:px-10 py-20 sm:py-28 bg-white/5 border-y border-white/10 text-left space-y-8 backdrop-blur-lg"
+      >
+        <motion.h1
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold max-w-5xl mx-auto text-center leading-tight drop-shadow"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          "Experience designs that capture your heart and stimulate your mind."
+        </motion.h1>
+
+        <motion.div
+          className="text-lg sm:text-xl text-white/80 space-y-6 max-w-4xl mx-auto font-bold"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          <p>
+            Welcome to the new era of design. You are about to experience a
+            revolution in how we think about design, where innovation and
+            creativity reign supreme.
+          </p>
+          <p>
+            This era marks a turning point where boundaries are pushed, and the
+            impossible becomes possible.
+          </p>
+          <p>
+            Get ready to witness the most exciting and groundbreaking designs
+            that will shape the future and inspire generations to come.
+          </p>
+        </motion.div>
+
+        <div className="text-center pt-8">
+          <button
+            onClick={() => scrollTo(servicesRef)}
+            className="text-sm font-semibold px-5 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full hover:bg-white/30 transition hover:cursor-pointer"
+          >
+            See Services ↓
+          </button>
+        </div>
+      </section>
+
+      <section
+        ref={servicesRef}
+        className="px-4 sm:px-6 md:px-10 py-16 sm:py-20 bg-white/5 border-t border-white/10"
+      >
+        <motion.div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
             Our Services
           </h2>
-          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto px-2 sm:px-0">
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
             Solutions crafted to empower brands through bold strategy and
             beautiful design.
           </p>
-        </FadeInUp>
+        </motion.div>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {services.map((service, index) => (

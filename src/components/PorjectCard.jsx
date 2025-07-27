@@ -4,9 +4,13 @@ import { useNavigate } from "react-router-dom";
 const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();
 
+  const handleNavigate = () => {
+    navigate(`/projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`);
+  };
+
   return (
     <motion.div
-      className="relative group cursor-pointer overflow-hidden rounded-3xl shadow-lg bg-white flex flex-col"
+      className="relative group overflow-hidden rounded-3xl shadow-lg"
       initial={{ opacity: 0, y: 80, rotateX: 20 }}
       animate={{ opacity: 1, y: 0, rotateX: 0 }}
       transition={{
@@ -15,34 +19,23 @@ const ProjectCard = ({ project, index }) => {
         type: "spring",
         stiffness: 120,
       }}
-      whileHover={{ y: -10, scale: 1.03 }}
+      whileHover={{ scale: 1.02 }}
     >
       <img
         src={project.mainImage}
         alt={project.title}
-        className="w-full h-40 sm:h-52 md:h-64 object-cover rounded-t-3xl"
+        className="w-full h-60 sm:h-72 md:h-80 object-cover rounded-3xl transition-transform duration-300 group-hover:scale-105"
       />
 
-      <div className="p-4 sm:p-6 flex flex-col flex-grow">
-        <h3 className="text-xl sm:text-2xl font-extrabold text-maroon-primary mb-1 sm:mb-2">
-          {project.title}
-        </h3>
-        <p className="text-maroon-secondary font-semibold mb-1 sm:mb-2 text-sm sm:text-base">
-          {project.subTitle}
-        </p>
-        <p className="text-gray-700 text-xs sm:text-sm mb-4 line-clamp-4 flex-grow">
-          {project.description}
-        </p>
-
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl backdrop-blur-sm bg-white/30 border border-white/40 shadow-inner">
         <button
-          onClick={() =>
-            navigate(
-              `/projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`
-            )
-          }
-          className="mt-auto inline-block px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm bg-maroon-primary text-white rounded-full hover:bg-maroon-secondary hover:cursor-pointer transition"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleNavigate();
+          }}
+          className="px-5 py-2 text-white text-sm sm:text-base bg-maroon-primary rounded-full hover:bg-maroon-secondary hover:cursor-pointer transition font-bold"
         >
-          View Project
+          See More
         </button>
       </div>
     </motion.div>
